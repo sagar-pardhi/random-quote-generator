@@ -10,4 +10,5 @@ export default defineConfig({
   resolve: {
     alias: [{ find: "@", replacement: "/src" }],
   },
+  base: "/random-quote-generator/",
 });
