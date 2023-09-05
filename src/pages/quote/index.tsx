@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 import { IQuote } from "../../../types";
 import { Quote } from "@/components/quote";
@@ -10,8 +9,6 @@ export const QuotePage = () => {
     quoteAuthor: "",
     quoteGenre: "",
   });
-
-  const navigate = useNavigate();
 
   const getQuote = async () => {
     const response = await fetch(
